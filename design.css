@@ -1,0 +1,657 @@
+*{
+	padding:0;
+	margin:0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+/* The font style for the whole webpage */
+body{
+	font-family: Georgia,"Times New Roman",Times,serif;
+	line-height:1;
+}
+
+/*Insert the background-image in the page 1*/
+.big-pic{
+	background-image:url("img1.jpeg");
+	padding: 270px;
+	text-align:center;
+	background-repeat:none;
+	background-size: auto;
+}
+
+/* pointer for the product image in page 1*/
+.picture,a:hover{
+	cursor: pointer;
+}
+
+/* adding border and make it in the center for introduction part*/
+.text-part{
+	width: 65%;
+	height:80%;
+	border: 2px solid black;
+	padding: 30px 50px;
+	margin:auto;
+	margin-top: 6rem;
+	margin-bottom: 6rem;
+	line-height: 70px;
+	font-family: 'Concert One', cursive;
+}
+
+/*The button for speech synthesis in page 1 introduction part */
+#read{
+	margin:0 320px;
+	padding: 10px 30px;
+}
+
+/*  edit the article of ecosystem partner and best tool and support to the center*/
+.row-area, .row2-area{
+	align-items:center;
+	justify-content: space-around;
+	position: relative;
+	display:flex;
+	flex-wrap:wrap;
+	flex-direction: row;
+	width:100%;
+	height:400px;
+}
+
+/* text width and height for the Huawei Ecosystem Partner article */
+.text{
+	width: 65%;
+	height: 80%;
+	color:white;
+}
+
+/* text width and height for the The Best Tools and Support article */
+.text1{
+	width: 65%;
+	height: 80%;
+}
+
+/* Font editing for the Huawei Ecosystem Partner article */
+.row-area h1{
+	font-size: 50px;
+	font-family:Audiowide;	
+}
+/* edditing heading 2 to center for Huawei Ecosystem Partner article */
+.row-area h2{
+	align-items:center;
+	justify-content: space-around;
+	position: relative;
+	display:flex;
+	padding: 30px;
+}
+
+/* edditing heading 2 to center for Best Tools and Support article */
+.row2-area h1{
+	align-items:center;
+	justify-content: space-around;
+	position: relative;
+	display:flex;
+	padding: 30px;
+}
+
+/* paragraph edditing for Huawei Ecosystem Partner article */
+.row-area  p{
+	line-height: 50px;
+	font-size: 20px;
+}
+
+/* text formatting for Huawei Ecosystem Partner  2 */
+.row2-area p{
+	line-height: 50px;
+	font-size: 20px;
+}
+
+/* background color for Huawei Ecosystem Partner article  */
+.row-area{
+	background: #262626;
+}
+
+
+/*  Background colour for the nav bar */
+nav{
+	background-color:#24262b;
+	height: 80px;
+	width: 100%;
+}
+
+/* Colour, size, and position for the logo in nav bar */
+label.logo a{
+	color: white;
+	font-size:35px;
+	line-height: 80px;
+	padding: 0 100px;
+	font-weight: bold;	
+	text-shadow: 2px 2px 8px #1b9bff;
+}
+
+/*Positioning the button to the right side in nav bar   */
+nav ul{
+	float:right;
+	margin-right: 40px;
+}
+
+/* vertical to horizontal for the  button in nav bar  */
+nav  li{
+	display:inline-block;
+	line-height: 80px;
+	margin:0 8px;
+}
+
+/* text colour and transformation for the  button in nav bar  */
+nav a{
+	color: white;
+	font-size: 18px;
+	border-radius: 3px;
+	padding: 7px 13px;
+	text-transform: uppercase;
+	border: 1px solid transparent;
+	border-radius:3px;
+}
+
+/*the border for the home button*/
+a.active,a:hover{
+	border: 1px solid white;
+	transition: .5s;
+}
+
+nav #icon{
+	color: white;
+	font-size:30px;
+	margin-right:40px;
+	line-height:80px;
+	float:right;
+	cursor: pointer;
+	background-color:#24262b;
+	display:none;
+}
+
+
+/* Responsive for nav bar*/
+@media (max-width: 1048px){
+	label.logo{
+		font-size: 30px;
+		padding-left:60px;
+	}
+	nav ul {
+		margin-right: 20px;
+	}
+	nav a{
+		font-size:17px;
+	}
+}
+
+/* Responsive for nav bar and when minimize the screen*/
+@media (max-width: 909px){
+	nav #icon{
+		display:block;
+	}
+	nav ul{
+		position:fixed;
+		width:100%;
+		height:800vh;
+		background:#24262b;
+		top:80px;
+		left: -100%;
+		text-align:center;
+		transition: all .5s;
+	}
+	nav li{
+		display:block;
+		margin:50px 0;
+		line-height: 30px;
+	}
+	nav a{
+		font-size:20px;
+	}
+	a.active,a:hover{
+		border:none;
+		color: #3498db;
+	}
+	nav ul.show{
+		left:0;
+	}
+}
+
+/*Responsive for the slideshow */
+@media only screen and (min-width: 768px){
+	#slideShow{
+		margin-right:auto;
+		margin-left:auto;
+		display:flex;
+		text-align:center;
+	}	
+}
+
+
+/* horiontal spacing for the product section in page 1*/
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px 10px;
+  height: 320px;
+  margin: 10px 50px;
+  border: 2px solid black;
+}
+
+/*Vertical spacing for the product section in page 1 */
+.row{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+/* editing the picture in the product section in page 1*/
+.row img{
+	object-fit: cover;
+	padding:auto;
+	margin:15px 10px 20px 20px;	
+}
+
+/* editing the paragraph and heading 3 for product section in page 1*/
+.column p, h3{
+	text-align: center;
+	line-height:1.0;
+}
+
+
+h1{
+	font-size: 50px;
+	font-family: Audiowide;
+	text-align: center;
+}
+
+p{
+	font-size: 20px;
+	line-height: 40px;
+	padding-top: 15px;
+	text-align:justify;
+	
+}
+
+
+.img2{
+	float: right;
+	left:12px;
+}
+
+.img1, .img2{
+	height: 140px;
+	object-fit: cover;
+	padding: 10px;
+}
+
+img{
+	display:block;
+	height:140px;
+	float: left;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+img{
+	float: left;
+}
+
+/* for slideshow position, height, width and styling*/
+#slideShow{
+	padding-top:10px;
+}
+
+#slideShow img{
+	width: 45%;
+	min-height: 500px;
+	object-fit: cover;
+	border: 2px solid black;
+}
+
+#slideImage {
+	padding: 5px 5px 5px 5px;
+	margin: 0px 35px;	
+}
+
+#slideImage2 {
+	padding: 5px 5px 5px 5px;
+	margin: 0px 35px;	
+}
+
+
+/* The list width in the footer*/
+.container{
+		max-width:1170px;
+		margin:auto;
+}
+
+/* The list width in the footer*/
+ul{
+	list-style: none;
+}
+
+/* the button position for product section in page 1 */
+.shop{
+	margin-top: 30px;
+	margin-left: 110px;
+	padding: 5px 5px;
+	cursor: pointer;
+}
+ 
+/* Background colour for footer*/
+.footer{
+	background-color: #24262b;
+	padding: 40px 0;
+}
+
+/* width for the whole footer*/
+.footer-col{
+	width: 25%;
+	padding: 0 15px;
+}
+
+/*Make the footer become horizontal*/
+.row{
+	display:flex;
+}
+
+/*The size and position for title in footer */
+.footer-col h4{
+	font-size: 18x;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 30px;
+	font-weight: 500;
+	position: relative;
+}
+
+/* Adding red colour line in the footer */
+.footer-col h4::before{
+	content:'';
+	position:absolute;
+	bottom:-10px;
+	background-color: #FF1493;
+	height: 2px;
+	width: 50px;
+}
+
+/* line height for the list in the footer */
+.footer-col ul li{
+	margin-bottom:10px;
+}
+/* font-size, colour, and hover transition for the list in the footer */
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration:none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+
+/*hover color and position for the list in the footer  */
+.footer-col ul li a:hover{
+	color:#ffffff;
+	padding-left: 10px;
+}
+
+/* social icon in the footer*/
+.footer-col .social-links a{
+	display:inline-block;
+	height:40px;
+	width:40px;
+	background-color:rgba(255,255,255,0.2);
+	margin: 0 10px 0 10px;
+	text-align:center;
+	line-height:40px;	
+	color: #ffffff;
+	border-radius: 50%;
+	transition:all 0.5s ease;
+}
+
+/* hover color for the social icon in the footer*/
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+	
+/* Icon credit card in the footer */
+.method .payment a{
+	display: inline-block;
+	height:40px;
+	width:40px;
+	background-color:rgba(255,255,255,0.2);
+	margin: 0 10px 0 10px;
+	text-align:center;
+	line-height:40px;
+	color: #ffffff;
+	border-radius: 50%;
+	transition:all 0.5s ease;
+}
+
+/* hover color for credit card icon in the footer*/
+.method .payment a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/* The scrolling animation*/
+html{
+	scroll-behavior: smooth;
+}
+
+/*Page 2*/
+/*Page colour for page 2*/
+.page2{
+	background-color: #cccccc;
+}
+
+/* adding border and text-shadow for the header in page 2*/
+#head1 {	
+	text-shadow: 2px 2px 8px #1b9bff;	
+	border: 2px solid black;
+	height:100px;
+	width: 30%;
+	padding: auto 10px;
+	margin: 25px auto;
+	border-radius: 5px 5px 25px 25px;
+	line-height: 90px;
+}
+
+/* adding text-shadow for the footer in page 2*/
+.foot1 h1{
+	text-shadow: 2px 2px 8px #1b9bff;	
+	text-align: center;
+	font-weight: bold;	
+}
+
+/* adding border for the footer in page 2*/
+.foot1{
+	border: 2px solid black;
+	width: 30%;
+	padding: 20px 10px;
+	margin: 50px auto;
+	border-radius: 5px 5px 25px 25px;
+}
+
+/* to make the text and image to the center and make the text to verticle*/
+.design{
+	position: absolute;
+	display:flex;
+	padding: 10px;	
+	margin:auto 130px;
+	border-radius: 4px;
+}
+
+/*Make the list item move to right in page 2 for the background part*/
+.Huawei1 ul li {
+	margin: 15px 90px;
+	color: white;
+	font-size:20px;
+	
+}
+
+/*Spacing for product description list in page 2 for the non-background part*/
+.Huawei2 ul li {
+	margin: 15px 90px;
+	font-size:20px;
+}
+
+/*to make the header 2 move to right in page 2 for the background part*/
+.huawei1 h2{
+	margin: auto 90px;
+	color: white;
+	text-shadow: 2px 2px 8px #1b9bff;	
+}
+
+/*to make the header 2 move to right in page 2 for the non-background part*/
+.huawei2 h2{
+	margin: auto 90px;			
+	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px pink;	
+}
+
+/*the position, size and border for the product image and text in page 2 */
+.imgBox img{
+	border: 2px solid black;
+	height:290px;
+	padding: auto 50px;
+	display: flex;
+	margin: auto;
+}
+
+/*The size and position for product description video in page 2*/
+#vidDiv {
+	position: center;
+	width: 50%;
+	margin: 390px 300px;	
+}
+
+/*Resizing the product video*/
+video {
+	width: 100%;
+	margin: 20px 10px;
+}
+
+/* The position and the size for the button in page2*/
+button{
+	margin: -337px;
+	padding:5px;
+	transform: translate(-30px,2px);
+	position:flex;	
+}
+
+
+/*Separate the video and the text in non-background part for page 2*/
+.box2{
+	display: flex;
+	color: white;
+	background: #262626;
+	padding: 20px;
+}
+
+/* design for scroll uo button*/
+.gotopbtn{
+	position:fixed;
+	width: 30px;
+	height:50px;
+	background: #27ae60;
+	bottom:30px;
+	right: 20px;
+	text-align:center;
+	line-height:50px;
+	color:white;
+	font-style: 22px;
+}
+
+/*Button for the speech synthesis in page 2*/
+#ProdBtn{
+	padding:10px 25px;
+	margin: 15px 15rem;
+	cursor: pointer;
+}
+
+/*Page 3*/
+/*the size and position of the video recorder in page3*/
+#vid1{
+	height:300px; 
+	width: 300px; 
+	margin: auto 300px;
+	width: 50%; 
+	border: 2px solid black;
+}
+
+/*position of the video recorder in page 3*/
+#vid2{
+	float:right;  
+	height:100px; 
+	width: 400px;
+}
+
+/*Start button for recorder in page3*/
+#strtVid{
+	
+	padding:10px; 
+	margin-left:190px;
+	margin: -50px;
+}
+
+/*Stop button for recorder in page3*/
+#stpVid{
+	
+	margin-left:190px;
+	padding: 10px;
+}
+
+/*The shadow for header 1 in page 3.*/
+#h1_page3{
+	text-shadow: 0 3px 3px #d81b60;	
+}
+
+/*The shadow and position of paragraph in page 3.*/
+#p_page3{
+	text-shadow: 0 3px 3px #e53935;
+	text-align: center;
+	font-size: 30px;
+}
+
+/* The page colour in page 3.*/
+#body_page3{
+	background-color: #80d8ff;
+}
+
+/* Padding and margin for feedback section in page 3. */
+input[type=text],select{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/*colour and position for the submit button in page 3*/
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/*Hover fot the submit button.*/
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/*Background colour for the feebback section in page 3.*/
+#feedback{
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding:20px;
+	
+}

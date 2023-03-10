@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "UTF-8" />
+		<title>Huawei.com</title>
+		<!-- link to the css file -->
+                <link href="design.css" rel="stylesheet" type="text/css"/>
+		<!-- to run the voice script -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0;">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	</head>
+	
+	<body>
+		
+
+	
+		<!-- Nav menu bar --->
+		<nav>
+			<label class="logo"><a href="Page1.html">Huawei</label></a>
+		<ul>	
+			<li><a class="active" href="Page1.html">Home</a></li>
+			<li><a href="#about">About Us</a></li>
+			<li><a href="#items">Product Selection</a></li>
+		</ul>
+		<label id="icon">
+		<i class="fa fa-bars"></i>
+		</label>
+		</nav>
+		<hr>
+			
+		<!-- To load the slideshow images -->
+		<br><div id="slideShow">
+			<img src = "image/slide6.jpg" id= "slideImage">
+			<img src = "image/slide3.jpg" id= "slideImage2" style="float: left">
+		</div>	
+		
+		<!-- Introduction part -->	
+			<div class="text-part" id="about">
+			<img src="image/logo1.png" style="height:80px; padding-top:5px">
+			<img src="image/logo1.png" style="height:80px; float:right; padding-top: 5px">
+				<h1>Introduction</h1>
+				<p>Huawei is a leading global provider of information and communications technologies (ICT) infrastructure and smart device. With integrated solutions across four key domains- telecom networks, IT, smart devices and cloud services-we are committed to bringing digital to every person, home and organization for a fully connected, intelligent world. As one of Huawei's three business groups, Huwei Consumer BG is the leader of the all-scenario AI life. It covers smartphones, PC and tablets, wearables, mobile broadband devices, family devices and device cloud services. Huawei Consumer BG is delicated to delivering the latest technologies to consumers and sharing the happiness of technological advances with more people around the world. Walk the walk and make dreams come true. </p>	
+				<input type="button" id="read" onClick="mySpeech()" value="Read" />
+			</div>
+			</div>
+		
+		<!-- about the introduction of ecosystem partner -->
+		<div class="row-area">
+			<div class="text">
+			<h1>Huawei Ecosystem Partner</h1>
+			<h2>Work together,Stay together</h2>
+			<p>As mobile device usage continies growing, Huawei is helping partners bring their apps to users Worldwide. Whether an international app entering the Chinese market or a Chinese app reaching a global audience, Huawei provides wide-ranging support that can lead partners to success.</p>	
+		</div>	
+		</div>
+		
+		<!--about the best tools and support-->
+		<div class="row2-area">
+		<div class="text1">
+		<h1>The Best Tools and Support</h1>
+		<p>Huawei Partners get exclusive access to open capabilities and services to create top-tier, premium app experiences. Huawei offers seamless integrations, user acquisition tools, and matketing support. Localization and consulting services help developer partners tap into global growth opportunities to reach audiences worldwide.</P>		
+		</div>
+		</div>
+	
+		<!--- table column 1 for the product --->
+		<div class = "button" id="items">	
+		<div class="row">
+			<div class="column" style="background-color:#f06292;">
+				<div id="p">
+				<img id="pic1"class="picture" src="image/pic1.jpg">
+					<h3>Huawei Mate X2</h3>
+					<br><input type="button" id="shop1" class="shop" value="Shop Now" />			
+			</div>
+			</div>
+			
+			<div class="column" style="background-color:#ccff90;">
+				<img id="pic2" class="picture" src="image/pic2.jpg">
+					<h3>Huawei Mate 40Pro</h3>
+					<br><input type="button" id="shop2" class="shop" value="Shop Now" />
+			</div>
+			
+			<div class="column" style="background-color:#f9a825;">
+				<img id="pic3" class="picture" src="image/pic3.jpg">
+					<h3>Huawei P50 Pro</h3>
+					<br><input type="button" id="shop3" class="shop" value="Shop Now" />
+			</div>
+		</div>
+		
+		<!--- table column 2 for the product --->
+		<div class="row">		
+			<div class="column" style="background-color:#29b6f6;">
+				<img id="pic4" class="picture" src="image/pic4.png">
+					<h3>Huawei Mate 30</h3>					
+					<br><input type="button" id="shop4" class="shop" value="Shop Now" />
+		</div>			
+				
+			<div class="column" style="background-color:#ffee58;">
+				<img id="pic5" class="picture" src="image/pic5.jpg">
+					<h3>Huawei P40</h3>					
+					<br><input type="button" id="shop5" class="shop" value="Shop Now" />
+			</div>
+				
+		<div class="column" style="background-color:#4db6ac;">
+			<img id="pic6" class="picture" src="image/pic6.jpg">
+				<h3>Huawei MatePad Pro</h3>				
+				<br><input type="button" id="shop6" class="shop" value="Shop Now" />
+		</div>
+	</div>
+</div>
+	
+	<a class="gotopbtn" href="#"><i class="fa fa-arrow-up"></i></a>
+	
+		<!-- footer -->		
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="footer-col">
+						<h4>company</h4>
+					    <ul>
+							<li><a href="#">about us</a></li>
+							<li><a href="#">our services</a></li>
+							<li><a href="#">privacy policy</a></li>
+							<li><a href="#">affiliate product</a></li>
+					    </ul>
+					</div>
+					<div class="footer-col">
+						<h4>get help</h4>
+						<ul>
+							<li><a href="#">FAQ</a></li>
+							<li><a href="#">shipping</a></li>
+							<li><a href="#">returns</a></li>
+							<li><a href="#">order status</a></li>
+							<li><a href="#">payment options</a></li>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<h4>Products</h4>
+						<ul>
+							<li><a href="#">Phones</a></li>
+							<li><a href="#">Laptop</a></li>
+							<li><a href="#">tablets</a></li>
+							<li><a href="#">Headphones</a></li>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<h4>follow us</h4>
+						<div class="social-links">
+							<a href="https://www.facebook.com/HuaweiAPAC/?brand_redir=119405895873"><i class="fa fa-facebook"></i></a>
+							<a href="https://twitter.com/huawei"><i class="fa fa-twitter"></i></a>
+							<a href="https://www.instagram.com/huawei/"><i class="fa fa-instagram"></i></a>
+							<a href="https://www.youtube.com/channel/UCtjV1_XU6gvPYyreaFScxBQ"><i class="fa fa-youtube"></i></a>
+						</div>
+						<div class="method">
+						<br><h4>Payment Method</h4>
+						<div class="payment">
+							<a href="#"><i class="fa fa-cc-paypal"></i></a>
+							<a href="#"><i class="fa fa-cc-visa"></i></a>
+							<a href="#"><i class="	fa fa-cc-amex"></i></a>
+							<a href="#"><i class="fa fa-cc-mastercard"></i></a>					
+			</div>
+				</div>
+					</div>
+						</footer>
+		
+	
+	
+	
+	
+	<!-- javascript function to run and to set the slideshow time -->
+		<script>
+			function first(){
+				document.getElementById("slideImage").src="image/slide1.jpeg";
+			}
+			function second(){
+				document.getElementById("slideImage").src="image/slide2.jpg";
+			}
+			function third(){
+				document.getElementById("slideImage").src="image/slide3.jpg";
+			}
+			function forth(){
+				document.getElementById("slideImage").src="image/slide4.jpg";
+			}
+			setInterval(first,5000);
+			setInterval(second,10000);
+			setInterval(third,15000);
+			setInterval(forth,20000);
+		</script>
+			
+		<!-- javascript function to run and to set the slideshow time -->
+			<script>
+			function first(){
+				document.getElementById("slideImage2").src="image/slide5.jpg";
+			}
+			function second(){
+				document.getElementById("slideImage2").src="image/slide6.jpg";
+			}
+			function third(){
+				document.getElementById("slideImage2").src="image/slide7.jpg";
+			}
+			function forth(){
+				document.getElementById("slideImage2").src="image/slide8.jpeg";
+			}
+			setInterval(first,5000);
+			setInterval(second,10000);
+			setInterval(third,15000);
+			setInterval(forth,20000);
+		</script>
+		
+		<!--javascript for the product button function-->
+		<script>
+		$("#shop1").click(function(){
+		localStorage.setItem("Page1_Var", "pic1");
+		window.location.href="Page2.html";
+		});
+		$("#shop2").click(function(){
+		localStorage.setItem("Page1_Var", "pic2");		
+		window.location.href="Page2.html";
+		});
+		$("#shop3").click(function(){
+		localStorage.setItem("Page1_Var", "pic3");	
+		window.location.href="Page2.html";		
+		});
+		$("#shop4").click(function(){
+		localStorage.setItem("Page1_Var", "pic4");	
+		window.location.href="Page2.html";
+		});
+		$("#shop5").click(function(){
+		localStorage.setItem("Page1_Var", "pic5");	
+		window.location.href="Page2.html";
+		});
+		$("#shop6").click(function(){
+		localStorage.setItem("Page1_Var", "pic6");	
+		window.location.href="Page2.html";
+		});
+		
+		</script>
+		
+		<!--javascript for the product button function-->
+		<script>
+		$("#pic1").click(function(){
+		localStorage.setItem("Page1_Var", "pic1");
+		window.location.href="Page2.html";
+		});
+		$("#pic2").click(function(){
+		localStorage.setItem("Page1_Var", "pic2");		
+		window.location.href="Page2.html";
+		});
+		$("#pic3").click(function(){
+		localStorage.setItem("Page1_Var", "pic3");	
+		window.location.href="Page2.html";		
+		});
+		$("#pic4").click(function(){
+		localStorage.setItem("Page1_Var", "pic4");	
+		window.location.href="Page2.html";
+		});
+		$("#pic5").click(function(){
+		localStorage.setItem("Page1_Var", "pic5");	
+		window.location.href="Page2.html";
+		});
+		$("#pic6").click(function(){
+		localStorage.setItem("Page1_Var", "pic6");	
+		window.location.href="Page2.html";
+		});
+		
+		</script>
+		
+			<!--javascript for the speech Synthesis function-->
+		<script>
+		function mySpeech() { 
+            var message = new SpeechSynthesisUtterance();
+            var voices = window.speechSynthesis.getVoices();
+            message.voiceURI = 'native';
+            message.voice = voices[9];
+            message.volume = 2; 
+            message.rate = 0.8; 
+            message.pitch = 1;
+            message.lang = 'en-UK';
+            message.text = 'Huawei is a leading global provider of information and communications technologies (ICT) infrastructure and smart device. With integrated solutions across four key domains- telecom networks, IT, smart devices and cloud services-we are committed to bringing digital to every person, home and organization for a fully connected, intelligent world. As one of Huaweis three business groups, Huwei Consumer BG is the leader of the all-scenario AI life. It covers smartphones, PC and tablets, wearables, mobile broadband devices, family devices and device cloud services. Huawei Consumer BG is delicated to delivering the latest technologies to consumers and sharing the happiness of technological advances with more people around the world. Walk the walk and make dreams come true.';
+            speechSynthesis.speak(message);
+        }
+	
+		</script>
+			
+		<!--javascript for the nav button function when minimize the screen-->
+		<script>
+		$(document).ready(function(){
+			$('#icon').click(function(){
+				$('ul').toggleClass('show');
+				});
+			});
+		</script>
+		
+	</body>
+</html>
